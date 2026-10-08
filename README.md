@@ -57,28 +57,54 @@ By default, Safari cycles tabs spatially (left-to-right in the tab bar). If you 
 
 ## Installation
 
-### Method 1: Installing a Pre-Built Release (`.app`)
+### Option 1: Installing a Pre-Built Release (`.dmg` or `.zip`)
 
-1. Download the latest **`Quick Tabs.zip`** (or `.dmg`) from the [Releases](https://github.com/your-username/QuickTabs/releases) page.
-2. Unzip and drag **`Quick Tabs.app`** to your **`/Applications`** folder.
-3. Open **`Quick Tabs.app`** once from Applications to register the extension with Safari.
-
-#### Enabling the Extension in Safari
-
-1. Open **Safari**.
-2. Go to **Safari → Settings → Extensions** (or press `⌘,` and click **Extensions**).
-3. Find **Quick Tabs** in the list and check the box to turn it on.
-
-> [!NOTE]
-> **If using an open-source / unsigned release:**
-> If the build was compiled without a paid Apple Developer certificate, macOS Safari requires a one-time toggle to allow unsigned extensions:
-> 1. In Safari: Go to **Safari → Settings → Advanced** and check **"Show features for web developers"** (or "Show Develop menu in menu bar").
-> 2. In Safari's top menu bar, click **Develop → Allow Unsigned Extensions** (enter your Mac password when prompted).
-> 3. Go back to **Safari → Settings → Extensions** and check **Quick Tabs**.
+1. Download **`QuickTabs.app.zip`** (or `QuickTabs.dmg`) from the [Releases](https://github.com/your-username/QuickTabs/releases) page.
+2. Open the file and drag **`Quick Tabs.app`** to your **`/Applications`** folder.
 
 ---
 
-### Method 2: Building from Source (with Xcode)
+## Running Unsigned Releases on macOS
+
+Because Quick Tabs is an open-source project distributed outside the Mac App Store, macOS Gatekeeper and Safari enforce two standard security checks before running it. Follow these steps to set it up:
+### 1. Bypassing Gatekeeper in macOS Sequoia/Sonoma
+> [!TIP]
+> **Terminal One-Liner (if macOS Sequoia/Sonoma blocks the app completely):**
+> If macOS displays *"Quick Tabs.app is damaged"* or persistently blocks launch due to download quarantine, run this in Terminal:
+> `bash
+> xattr -cr /Applications/"Quick Tabs.app"
+> ```
+> This strips the quarantine flag (`com.apple.quarantine`) and allows the app to launch immediately.
+
+Opening the app once registers the extension with Safari. You can then close the app window.
+
+### 2. Bypassing Gatekeeper in older versions of macOS
+
+When you first open an app downloaded from the internet, macOS may show an alert:
+> *"Apple cannot check it for malicious software"* or *"Quick Tabs.app cannot be opened."*
+
+To bypass this check:
+- In Finder, open your **`/Applications`** folder.
+- **Right-click (or Control-click)** on **`Quick Tabs.app`** and select **Open**.
+- In the dialog that appears, click **Open**.
+- *(Alternatively on macOS Sequoia / Sonoma)*: Open **System Settings → Privacy & Security**, scroll down to the **Security** section, and click **Open Anyway**.
+
+### 3. Enabling the Extension in Safari
+
+By default, Safari only loads extensions signed with a paid Apple Developer ID. To enable open-source/unsigned extensions:
+
+1. Open **Safari**.
+2. Press **`⌘ ,`** (or go to **Safari → Settings…**) and navigate to the **Advanced** tab.
+3. Check **"Show features for web developers"** (on older macOS versions, *"Show Develop menu in menu bar"*).
+4. In Safari’s top menu bar, click **Develop → Allow Unsigned Extensions**.
+   *(Enter your Mac password or Touch ID when prompted)*.
+5. In **Safari Settings**, switch to the **Extensions** tab and check the box next to **Quick Tabs** to turn it on.
+
+You're all set! Press **`⌃S`** anywhere in Safari to cycle recent tabs.
+
+---
+
+### Option 2: Building from Source (with Xcode)
 
 Requirements: macOS 13 (Ventura) or newer, and Xcode 14+.
 
