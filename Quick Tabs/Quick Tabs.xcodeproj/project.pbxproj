@@ -1,0 +1,601 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 110;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		108AB31F30773E660016B5C1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 108AB31E30773E660016B5C1 /* AppDelegate.swift */; };
+		108AB32330773E660016B5C1 /* Main.html in Resources */ = {isa = PBXBuildFile; fileRef = 108AB32130773E660016B5C1 /* Main.html */; };
+		108AB32530773E660016B5C1 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 108AB32430773E660016B5C1 /* Icon.png */; };
+		108AB32730773E660016B5C1 /* Style.css in Resources */ = {isa = PBXBuildFile; fileRef = 108AB32630773E660016B5C1 /* Style.css */; };
+		108AB32930773E660016B5C1 /* Script.js in Resources */ = {isa = PBXBuildFile; fileRef = 108AB32830773E660016B5C1 /* Script.js */; };
+		108AB32B30773E660016B5C1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 108AB32A30773E660016B5C1 /* ViewController.swift */; };
+		108AB32E30773E660016B5C1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 108AB32C30773E660016B5C1 /* Main.storyboard */; };
+		108AB33030773E670016B5C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 108AB32F30773E670016B5C1 /* Assets.xcassets */; };
+		108AB33730773E670016B5C1 /* Quick Tabs Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 108AB33630773E670016B5C1 /* Quick Tabs Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		108AB33C30773E670016B5C1 /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 108AB33B30773E670016B5C1 /* SafariWebExtensionHandler.swift */; };
+		108AB34F30773E670016B5C1 /* popup.js in Resources */ = {isa = PBXBuildFile; fileRef = 108AB34830773E670016B5C1 /* popup.js */; };
+		108AB35030773E670016B5C1 /* background.js in Resources */ = {isa = PBXBuildFile; fileRef = 108AB34930773E670016B5C1 /* background.js */; };
+		108AB35130773E670016B5C1 /* images in Resources */ = {isa = PBXBuildFile; fileRef = 108AB34A30773E670016B5C1 /* images */; };
+		108AB35230773E670016B5C1 /* popup.html in Resources */ = {isa = PBXBuildFile; fileRef = 108AB34B30773E670016B5C1 /* popup.html */; };
+		108AB35330773E670016B5C1 /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = 108AB34C30773E670016B5C1 /* manifest.json */; };
+		108AB35430773E670016B5C1 /* popup.css in Resources */ = {isa = PBXBuildFile; fileRef = 108AB34D30773E670016B5C1 /* popup.css */; };
+		108AB35530773E670016B5C1 /* _locales in Resources */ = {isa = PBXBuildFile; fileRef = 108AB34E30773E670016B5C1 /* _locales */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		108AB33830773E670016B5C1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 108AB31330773E660016B5C1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 108AB33530773E670016B5C1;
+			remoteInfo = "Quick Tabs Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		108AB34330773E670016B5C1 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			dstPath = "";
+			dstSubfolder = PlugIns;
+			files = (
+				108AB33730773E670016B5C1 /* Quick Tabs Extension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		108AB31B30773E660016B5C1 /* Quick Tabs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Quick Tabs.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		108AB31E30773E660016B5C1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		108AB32230773E660016B5C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = Base; path = Base.lproj/Main.html; sourceTree = "<group>"; };
+		108AB32430773E660016B5C1 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		108AB32630773E660016B5C1 /* Style.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = Style.css; sourceTree = "<group>"; };
+		108AB32830773E660016B5C1 /* Script.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = Script.js; sourceTree = "<group>"; };
+		108AB32A30773E660016B5C1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		108AB32D30773E660016B5C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		108AB32F30773E670016B5C1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		108AB33130773E670016B5C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		108AB33630773E670016B5C1 /* Quick Tabs Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Quick Tabs Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		108AB33B30773E670016B5C1 /* SafariWebExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariWebExtensionHandler.swift; sourceTree = "<group>"; };
+		108AB33D30773E670016B5C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		108AB34830773E670016B5C1 /* popup.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = popup.js; path = Resources/popup.js; sourceTree = "<group>"; };
+		108AB34930773E670016B5C1 /* background.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = background.js; path = Resources/background.js; sourceTree = "<group>"; };
+		108AB34A30773E670016B5C1 /* images */ = {isa = PBXFileReference; lastKnownFileType = folder; name = images; path = Resources/images; sourceTree = "<group>"; };
+		108AB34B30773E670016B5C1 /* popup.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = popup.html; path = Resources/popup.html; sourceTree = "<group>"; };
+		108AB34C30773E670016B5C1 /* manifest.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = manifest.json; path = Resources/manifest.json; sourceTree = "<group>"; };
+		108AB34D30773E670016B5C1 /* popup.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; name = popup.css; path = Resources/popup.css; sourceTree = "<group>"; };
+		108AB34E30773E670016B5C1 /* _locales */ = {isa = PBXFileReference; lastKnownFileType = folder; name = _locales; path = Resources/_locales; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		108AB31830773E660016B5C1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			files = (
+			);
+		};
+		108AB33330773E670016B5C1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			files = (
+			);
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		108AB31230773E660016B5C1 = {
+			isa = PBXGroup;
+			children = (
+				108AB31D30773E660016B5C1 /* Quick Tabs */,
+				108AB33A30773E670016B5C1 /* Quick Tabs Extension */,
+				108AB31C30773E660016B5C1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		108AB31C30773E660016B5C1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				108AB31B30773E660016B5C1 /* Quick Tabs.app */,
+				108AB33630773E670016B5C1 /* Quick Tabs Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		108AB31D30773E660016B5C1 /* Quick Tabs */ = {
+			isa = PBXGroup;
+			children = (
+				108AB31E30773E660016B5C1 /* AppDelegate.swift */,
+				108AB32A30773E660016B5C1 /* ViewController.swift */,
+				108AB32C30773E660016B5C1 /* Main.storyboard */,
+				108AB32F30773E670016B5C1 /* Assets.xcassets */,
+				108AB33130773E670016B5C1 /* Info.plist */,
+				108AB32030773E660016B5C1 /* Resources */,
+			);
+			path = "Quick Tabs";
+			sourceTree = "<group>";
+		};
+		108AB32030773E660016B5C1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				108AB32130773E660016B5C1 /* Main.html */,
+				108AB32430773E660016B5C1 /* Icon.png */,
+				108AB32630773E660016B5C1 /* Style.css */,
+				108AB32830773E660016B5C1 /* Script.js */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		108AB33A30773E670016B5C1 /* Quick Tabs Extension */ = {
+			isa = PBXGroup;
+			children = (
+				108AB34730773E670016B5C1 /* Resources */,
+				108AB33B30773E670016B5C1 /* SafariWebExtensionHandler.swift */,
+				108AB33D30773E670016B5C1 /* Info.plist */,
+			);
+			path = "Quick Tabs Extension";
+			sourceTree = "<group>";
+		};
+		108AB34730773E670016B5C1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				108AB34830773E670016B5C1 /* popup.js */,
+				108AB34930773E670016B5C1 /* background.js */,
+				108AB34A30773E670016B5C1 /* images */,
+				108AB34B30773E670016B5C1 /* popup.html */,
+				108AB34C30773E670016B5C1 /* manifest.json */,
+				108AB34D30773E670016B5C1 /* popup.css */,
+				108AB34E30773E670016B5C1 /* _locales */,
+			);
+			name = Resources;
+			path = "Quick Tabs Extension";
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		108AB31A30773E660016B5C1 /* Quick Tabs */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 108AB34430773E670016B5C1 /* Build configuration list for PBXNativeTarget "Quick Tabs" */;
+			buildPhases = (
+				108AB31730773E660016B5C1 /* Sources */,
+				108AB31830773E660016B5C1 /* Frameworks */,
+				108AB31930773E660016B5C1 /* Resources */,
+				108AB34330773E670016B5C1 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				108AB33930773E670016B5C1 /* PBXTargetDependency */,
+			);
+			name = "Quick Tabs";
+			productName = "Quick Tabs";
+			productReference = 108AB31B30773E660016B5C1 /* Quick Tabs.app */;
+			productType = "com.apple.product-type.application";
+		};
+		108AB33530773E670016B5C1 /* Quick Tabs Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 108AB34030773E670016B5C1 /* Build configuration list for PBXNativeTarget "Quick Tabs Extension" */;
+			buildPhases = (
+				108AB33230773E670016B5C1 /* Sources */,
+				108AB33330773E670016B5C1 /* Frameworks */,
+				108AB33430773E670016B5C1 /* Resources */,
+			);
+			buildRules = (
+			);
+			name = "Quick Tabs Extension";
+			productName = "Quick Tabs Extension";
+			productReference = 108AB33630773E670016B5C1 /* Quick Tabs Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		108AB31330773E660016B5C1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2700;
+				LastUpgradeCheck = 2700;
+				TargetAttributes = {
+					108AB31A30773E660016B5C1 = {
+						CreatedOnToolsVersion = 27.0;
+					};
+					108AB33530773E670016B5C1 = {
+						CreatedOnToolsVersion = 27.0;
+					};
+				};
+			};
+			buildConfigurationList = 108AB31630773E660016B5C1 /* Build configuration list for PBXProject "Quick Tabs" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 108AB31230773E660016B5C1;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 108AB31C30773E660016B5C1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				108AB31A30773E660016B5C1 /* Quick Tabs */,
+				108AB33530773E670016B5C1 /* Quick Tabs Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		108AB31930773E660016B5C1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			files = (
+				108AB32530773E660016B5C1 /* Icon.png in Resources */,
+				108AB32E30773E660016B5C1 /* Main.storyboard in Resources */,
+				108AB32930773E660016B5C1 /* Script.js in Resources */,
+				108AB32330773E660016B5C1 /* Main.html in Resources */,
+				108AB33030773E670016B5C1 /* Assets.xcassets in Resources */,
+				108AB32730773E660016B5C1 /* Style.css in Resources */,
+			);
+		};
+		108AB33430773E670016B5C1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			files = (
+				108AB35130773E670016B5C1 /* images in Resources */,
+				108AB35230773E670016B5C1 /* popup.html in Resources */,
+				108AB35430773E670016B5C1 /* popup.css in Resources */,
+				108AB35330773E670016B5C1 /* manifest.json in Resources */,
+				108AB35030773E670016B5C1 /* background.js in Resources */,
+				108AB35530773E670016B5C1 /* _locales in Resources */,
+				108AB34F30773E670016B5C1 /* popup.js in Resources */,
+			);
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		108AB31730773E660016B5C1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			files = (
+				108AB32B30773E660016B5C1 /* ViewController.swift in Sources */,
+				108AB31F30773E660016B5C1 /* AppDelegate.swift in Sources */,
+			);
+		};
+		108AB33230773E670016B5C1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			files = (
+				108AB33C30773E670016B5C1 /* SafariWebExtensionHandler.swift in Sources */,
+			);
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		108AB33930773E670016B5C1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 108AB33530773E670016B5C1 /* Quick Tabs Extension */;
+			targetProxy = 108AB33830773E670016B5C1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		108AB32130773E660016B5C1 /* Main.html */ = {
+			isa = PBXVariantGroup;
+			children = (
+				108AB32230773E660016B5C1 /* Base */,
+			);
+			name = Main.html;
+			sourceTree = "<group>";
+		};
+		108AB32C30773E660016B5C1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				108AB32D30773E660016B5C1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		108AB33E30773E670016B5C1 /* Debug configuration for PBXProject "Quick Tabs" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 27.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		108AB33F30773E670016B5C1 /* Release configuration for PBXProject "Quick Tabs" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 27.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		108AB34130773E670016B5C1 /* Debug configuration for PBXNativeTarget "Quick Tabs Extension" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Quick Tabs Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Quick Tabs Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.quicktabs.Quick-Tabs.Extension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		108AB34230773E670016B5C1 /* Release configuration for PBXNativeTarget "Quick Tabs Extension" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Quick Tabs Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Quick Tabs Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.quicktabs.Quick-Tabs.Extension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		108AB34530773E670016B5C1 /* Debug configuration for PBXNativeTarget "Quick Tabs" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Quick Tabs/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Quick Tabs";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				INFOPLIST_KEY_NSViewGestureRecognizerIsExclusive = NO;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.quicktabs.Quick-Tabs";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		108AB34630773E670016B5C1 /* Release configuration for PBXNativeTarget "Quick Tabs" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Quick Tabs/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Quick Tabs";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				INFOPLIST_KEY_NSViewGestureRecognizerIsExclusive = NO;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.quicktabs.Quick-Tabs";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		108AB31630773E660016B5C1 /* Build configuration list for PBXProject "Quick Tabs" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				108AB33E30773E670016B5C1 /* Debug configuration for PBXProject "Quick Tabs" */,
+				108AB33F30773E670016B5C1 /* Release configuration for PBXProject "Quick Tabs" */,
+			);
+			defaultConfigurationName = Release;
+		};
+		108AB34030773E670016B5C1 /* Build configuration list for PBXNativeTarget "Quick Tabs Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				108AB34130773E670016B5C1 /* Debug configuration for PBXNativeTarget "Quick Tabs Extension" */,
+				108AB34230773E670016B5C1 /* Release configuration for PBXNativeTarget "Quick Tabs Extension" */,
+			);
+			defaultConfigurationName = Release;
+		};
+		108AB34430773E670016B5C1 /* Build configuration list for PBXNativeTarget "Quick Tabs" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				108AB34530773E670016B5C1 /* Debug configuration for PBXNativeTarget "Quick Tabs" */,
+				108AB34630773E670016B5C1 /* Release configuration for PBXNativeTarget "Quick Tabs" */,
+			);
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 108AB31330773E660016B5C1 /* Project object */;
+	validationLevel = 1;
+}

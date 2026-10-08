@@ -1,0 +1,14 @@
+{
+  "extension_name": {
+    "message": "Quick Tabs",
+    "description": "The display name of the extension."
+  },
+  "extension_description": {
+    "message": "Quickly switch between your most recently used tabs with a keyboard shortcut.",
+    "description": "Description of the extension shown in Safari preferences."
+  },
+  "command_toggle": {
+    "message": "Switch to recent tab",
+    "description": "Label for the keyboard shortcut command."
+  }
+}

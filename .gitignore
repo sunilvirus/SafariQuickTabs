@@ -1,0 +1,26 @@
+# Xcode & DerivedData
+build/
+DerivedData/
+*.xcuserstate
+*.xcuserdata/
+xcuserdata/
+*.xcscmblueprint
+
+# Distribution & Build Outputs
+dist/
+
+# macOS System Files
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+
+# Editor & Temporary Files
+.vscode/
+.idea/
+*.swp
+*~
+*.log
+scratch/

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="popup.css">
+  <title>Quick Tabs</title>
+</head>
+<body>
+
+  <!-- ============================================================= -->
+  <!-- Picker view (default)                                          -->
+  <!-- ============================================================= -->
+  <div id="picker-view">
+    <header>
+      <h1>Quick Tabs</h1>
+      <button id="settings-btn" class="icon-btn" title="Settings" aria-label="Settings">
+        <svg viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M8.34 1.804A1 1 0 019.32 1h1.36a1 1 0 01.98.804l.295 1.473a7.04 7.04 0 011.57.91l1.428-.46a1 1 0 011.134.432l.68 1.178a1 1 0 01-.153 1.236l-1.132 1.012a7.126 7.126 0 010 1.83l1.132 1.012a1 1 0 01.154 1.236l-.68 1.178a1 1 0 01-1.135.432l-1.428-.46a7.04 7.04 0 01-1.57.91l-.294 1.473a1 1 0 01-.98.804H9.32a1 1 0 01-.98-.804l-.295-1.473a7.04 7.04 0 01-1.57-.91l-1.428.46a1 1 0 01-1.134-.432l-.68-1.178a1 1 0 01.153-1.236l1.132-1.012a7.13 7.13 0 010-1.83L3.386 5.393a1 1 0 01-.154-1.236l.68-1.178a1 1 0 011.135-.432l1.428.46a7.04 7.04 0 011.57-.91L8.34 1.804zM10 13a3 3 0 100-6 3 3 0 000 6z"/>
+        </svg>
+      </button>
+    </header>
+
+    <ul id="tab-list" role="listbox" aria-label="Recent tabs">
+      <li class="loading">Loading tabs…</li>
+    </ul>
+
+    <footer>
+      <span><kbd id="footer-shortcut-kbd">⌃S</kbd> Cycle</span>
+      <span>Release <kbd id="footer-mod-kbd">⌃</kbd> to select</span>
+    </footer>
+  </div>
+
+  <!-- ============================================================= -->
+  <!-- Settings view                                                   -->
+  <!-- ============================================================= -->
+  <div id="settings-view" hidden>
+    <div class="settings-header">
+      <button id="back-btn" class="icon-btn" title="Back" aria-label="Back to tabs">
+        <svg viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z"/>
+        </svg>
+      </button>
+      <h2>Settings</h2>
+    </div>
+
+    <!-- Keyboard shortcut -->
+    <div class="setting-group">
+      <div class="setting-row">
+        <label>Keyboard Shortcut</label>
+        <div class="shortcut-controls">
+          <kbd id="current-shortcut" class="shortcut-badge">⌃S</kbd>
+          <button id="change-shortcut-btn" class="btn-change" type="button">Change</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Number of tabs -->
+    <div class="setting-group">
+      <div class="setting-row">
+        <label for="max-tabs-slider">Tabs to show</label>
+        <span class="range-value" id="max-tabs-value">5</span>
+      </div>
+      <div class="range-row">
+        <input type="range" id="max-tabs-slider" min="2" max="10" step="1" value="5">
+      </div>
+    </div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

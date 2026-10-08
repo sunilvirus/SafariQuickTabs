@@ -1,0 +1,328 @@
+/* Quick Tabs — Popup Stylesheet
+   Matches macOS system appearance (light / dark) automatically. */
+
+/* ------------------------------------------------------------------ */
+/* Design tokens                                                       */
+/* ------------------------------------------------------------------ */
+:root {
+  --bg-primary: #f5f5f7;
+  --bg-secondary: #ffffff;
+  --bg-hover: #e8e8ed;
+  --bg-selected: #0071e3;
+  --text-primary: #1d1d1f;
+  --text-secondary: #86868b;
+  --text-selected: #ffffff;
+  --border: #d2d2d7;
+  --accent: #0071e3;
+  --green: #34c759;
+  --radius: 6px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-primary: #1c1c1e;
+    --bg-secondary: #2c2c2e;
+    --bg-hover: #3a3a3c;
+    --bg-selected: #0a84ff;
+    --text-primary: #f5f5f7;
+    --text-secondary: #98989d;
+    --text-selected: #ffffff;
+    --border: #38383a;
+    --accent: #0a84ff;
+    --green: #30d158;
+  }
+}
+
+/* ------------------------------------------------------------------ */
+/* Reset & base                                                        */
+/* ------------------------------------------------------------------ */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", sans-serif;
+  font-size: 13px;
+  width: 320px;
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  overflow: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ------------------------------------------------------------------ */
+/* Header                                                              */
+/* ------------------------------------------------------------------ */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 14px;
+  border-bottom: 0.5px solid var(--border);
+}
+
+header h1 {
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+.icon-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  background: none;
+  border: none;
+  border-radius: var(--radius);
+  color: var(--text-secondary);
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s;
+}
+
+.icon-btn:hover {
+  background: var(--bg-hover);
+  color: var(--text-primary);
+}
+
+.icon-btn svg {
+  width: 14px;
+  height: 14px;
+}
+
+/* ------------------------------------------------------------------ */
+/* Tab list                                                            */
+/* ------------------------------------------------------------------ */
+#tab-list {
+  list-style: none;
+  max-height: 340px;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+}
+
+#tab-list::-webkit-scrollbar {
+  width: 6px;
+}
+
+#tab-list::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 3px;
+}
+
+.tab-item {
+  display: flex;
+  align-items: center;
+  padding: 8px 14px;
+  gap: 10px;
+  cursor: pointer;
+  transition: background 0.1s;
+  border-bottom: 0.5px solid var(--border);
+}
+
+.tab-item:last-child {
+  border-bottom: none;
+}
+
+.tab-item:hover:not(.selected) {
+  background: var(--bg-hover);
+}
+
+.tab-item.selected {
+  background: var(--bg-selected);
+  color: var(--text-selected);
+}
+
+.tab-item.selected .tab-url {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.tab-item.selected .tab-active-dot {
+  border-color: var(--bg-selected);
+}
+
+/* Favicon */
+.tab-favicon {
+  width: 16px;
+  height: 16px;
+  border-radius: 3px;
+  flex-shrink: 0;
+  object-fit: contain;
+}
+
+/* Tab info text */
+.tab-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.tab-title {
+  font-size: 13px;
+  font-weight: 500;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 1.3;
+}
+
+.tab-url {
+  font-size: 11px;
+  color: var(--text-secondary);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 1.3;
+}
+
+/* Active-tab dot */
+.tab-active-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--green);
+  flex-shrink: 0;
+  border: 1.5px solid var(--bg-primary);
+}
+
+/* ------------------------------------------------------------------ */
+/* Footer hint bar                                                     */
+/* ------------------------------------------------------------------ */
+footer {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  padding: 7px 14px;
+  border-top: 0.5px solid var(--border);
+  font-size: 11px;
+  color: var(--text-secondary);
+}
+
+footer span {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+
+kbd {
+  font-family: inherit;
+  font-size: 10px;
+  background: var(--bg-secondary);
+  border: 0.5px solid var(--border);
+  border-radius: 3px;
+  padding: 1px 4px;
+  min-width: 16px;
+  text-align: center;
+}
+
+/* ------------------------------------------------------------------ */
+/* Settings view                                                       */
+/* ------------------------------------------------------------------ */
+#settings-view {
+  padding: 14px;
+}
+
+.settings-header {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 18px;
+}
+
+.settings-header h2 {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.setting-group {
+  margin-bottom: 18px;
+}
+
+.setting-group label {
+  display: block;
+  font-size: 13px;
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+
+.setting-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.setting-group .setting-row label {
+  margin-bottom: 0;
+}
+
+.shortcut-controls {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.shortcut-badge {
+  font-size: 12px;
+  font-weight: 600;
+  padding: 2px 7px;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+}
+
+.btn-change {
+  font-family: inherit;
+  font-size: 11px;
+  font-weight: 500;
+  padding: 3px 8px;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  color: var(--text-primary);
+  cursor: pointer;
+  transition: background 0.15s, border-color 0.15s;
+}
+
+.btn-change:hover {
+  background: var(--bg-hover);
+  border-color: var(--accent);
+}
+
+.btn-change:active {
+  opacity: 0.8;
+}
+
+/* Range slider */
+.range-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.range-row input[type="range"] {
+  flex: 1;
+  accent-color: var(--accent);
+  height: 4px;
+}
+
+.range-value {
+  font-size: 15px;
+  font-weight: 600;
+  min-width: 20px;
+  text-align: center;
+}
+
+/* ------------------------------------------------------------------ */
+/* States                                                              */
+/* ------------------------------------------------------------------ */
+.loading,
+.empty-state {
+  text-align: center;
+  padding: 36px 14px;
+  color: var(--text-secondary);
+  font-size: 13px;
+}
