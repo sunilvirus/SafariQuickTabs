@@ -59,7 +59,7 @@ By default, Safari cycles tabs spatially (left-to-right in the tab bar). If you 
 
 ### Option 1: Installing a Pre-Built Release (`.dmg` or `.zip`)
 
-1. Download **`QuickTabs.app.zip`** (or `QuickTabs.dmg`) from the [Releases](https://github.com/your-username/QuickTabs/releases) page.
+1. Download **`QuickTabs.app.zip`** (or `QuickTabs.dmg`) from the [Releases](https://github.com/sunilvirus/SafariQuickTabs/releases) page.
 2. Open the file and drag **`Quick Tabs.app`** to your **`/Applications`** folder.
 
 ---
@@ -110,8 +110,8 @@ Requirements: macOS 13 (Ventura) or newer, and Xcode 14+.
 
 1. Clone this repository:
    ```bash
-   git clone https://github.com/your-username/QuickTabs.git
-   cd QuickTabs
+   git clone https://github.com/your-username/SafariQuickTabs.git
+   cd SafariQuickTabs
    ```
 2. Open the Xcode project:
    ```bash
